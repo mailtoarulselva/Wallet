@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>Lulu Wallet</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div class="introblock">
+        <div class="centerblock">
+            <ion-card>
+                <ion-card-header class="headertext">
+                    <ion-title>Send Money</ion-title>
+                </ion-card-header>
+                <ion-card-content padding>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label floating style="text-align: center;">Enter an Amount</ion-label>
+                            <ion-input type="text" class="amountinputtextstyle" placeholder="&#8377;0"></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label floating>
+                                <ion-icon name="contact" item-left></ion-icon>&nbsp;Send To</ion-label>
+                            <ion-input type="text" class="inputtextstyle"></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label floating>
+                                <ion-icon name="chatboxes" item-left></ion-icon>&nbsp;Memo (optional)</ion-label>
+                            <ion-input type="text" class="inputtextstyle"></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <br>
+                            <button ion-button icon-right (click)="openmodal()" style="padding:20px;margin-left:35%;font-size:1.5rem;">
+                              Add DebitCard
+                              
+                            </button>
+                        </ion-item>
+                    </ion-list>
+                </ion-card-content>
+            </ion-card>
+        </div>
+        <div class="nextbackground" style="background-image: url(img/footer7.png);">
+
+        </div>
+    </div>
+</ion-content>

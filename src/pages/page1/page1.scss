@@ -1,0 +1,24 @@
+page-page1 {
+    .scroll-content {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    .introblock {
+        background: #3f51b5;
+        background-repeat: no-repeat;
+        position: fixed;
+        width: 100%;
+        height: 50%;
+    }
+    .centerblock {
+        width: 100vh;
+        height: 60vh;
+        background: white;
+        margin-top: 5%;
+        margin-left: 24%;
+    }
+}

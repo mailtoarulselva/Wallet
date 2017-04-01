@@ -1,0 +1,95 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+      <ion-icon name="close"></ion-icon>
+    </button>
+        <ion-title>Enter Card Details</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+
+    <ion-list>
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-label floating>
+                        <ion-icon name="chatboxes" item-left></ion-icon>&nbsp;Card Number</ion-label>
+                    <ion-input type="text" class="inputtextstyle"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label floating>
+                        <ion-icon name="chatboxes" item-left></ion-icon>&nbsp;ExpiryDate</ion-label>
+                    <ion-input type="text" class="inputtextstyle"></ion-input>
+                </ion-item>
+            </ion-col>
+
+        </ion-row>
+        <ion-item>
+            <ion-label floating>
+                <ion-icon name="contact" item-left></ion-icon>&nbsp;Cardholder Name</ion-label>
+            <ion-input type="text" class="inputtextstyle"></ion-input>
+        </ion-item>
+        <ion-item style="padding-top:7%;">
+            <ion-label>Country</ion-label>
+            <ion-select [(ngModel)]="toppings" multiple="true">
+                <ion-option>Bacon</ion-option>
+                <ion-option>Black Olives</ion-option>
+                <ion-option>Extra Cheese</ion-option>
+                <ion-option>Mushrooms</ion-option>
+                <ion-option>Pepperoni</ion-option>
+                <ion-option>Sausage</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>
+                <ion-icon name="contact" item-left></ion-icon>&nbsp;Addressline 1</ion-label>
+            <ion-input type="text" class="inputtextstyle"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>
+                <ion-icon name="contact" item-left></ion-icon>&nbsp;Addressline 2</ion-label>
+            <ion-input type="text" class="inputtextstyle"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>
+                <ion-icon name="contact" item-left></ion-icon>&nbsp;City</ion-label>
+            <ion-input type="text" class="inputtextstyle"></ion-input>
+        </ion-item>
+
+
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-label floating>
+                        <ion-icon name="chatboxes" item-left></ion-icon>&nbsp;State</ion-label>
+                    <ion-input type="text" class="inputtextstyle"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label floating>
+                        <ion-icon name="chatboxes" item-left></ion-icon>&nbsp;Pincode</ion-label>
+                    <ion-input type="text" class="inputtextstyle"></ion-input>
+                </ion-item>
+            </ion-col>
+
+        </ion-row>
+
+
+        <p>By continuing, you create a Lulu Wallet account and agree to the Lulu Payments Terms of Service, Privacy Notice and Electronic Communications Policy</p>
+
+        <ion-item>
+            <br>
+            <button ion-button icon-right color="danger" style="padding:20px;font-size:1.5rem;">
+            Cancel                
+            </button>
+            <button ion-button icon-right style="padding:20px;font-size:1.5rem;">
+                Save                
+            </button>
+        </ion-item>
+    </ion-list>
+
+
+</ion-content>
